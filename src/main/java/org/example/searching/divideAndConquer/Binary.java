@@ -51,8 +51,10 @@ public class Binary {
 
     /**
      * Finds the integer square root of x using binary search.
+     * If x does not have an exact integer square root, it should return the floor value, i.e. the largest integer whose square is ≤ x.
      * @param x The non-negative integer.
-     * @return The integer square root of x.
+     * @return The integer square root of x, or the floor value (closest integer below the square root if the square root is not an integer).
+     * Returns -1 when a negative integer is provided.
      */
     public static int sqrt(int x) {
         // TODO: Implement binary search to approximate square root
