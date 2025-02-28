@@ -2,7 +2,7 @@ package org.example.searching.divideAndConquer;
 
 public class Binary {
     /**
-     * Implement binary search on a sorted array.
+     * Implement binary search on a sorted array of integers.
      * @param arr A sorted integer array.
      * @param target The integer to find.
      * @return The index of target if found, otherwise -1.
@@ -13,7 +13,7 @@ public class Binary {
     }
 
     /**
-     * Implement binary search on a sorted array.
+     * Implement binary search on a sorted array of integers.
      * @param arr An UNSORTED integer array.
      * @param target The integer to find.
      * @return The index of target if found, otherwise -1.
@@ -22,6 +22,32 @@ public class Binary {
         // TODO: Implement this method
         return -1;  // Placeholder
     }
+
+    /**
+     * Implement binary search on a sorted array of integers.
+     * @param arr A sorted integer array.
+     * @param target The integer to find.
+     * @return The index of target if found, otherwise -1.
+     * This method is case sensitive (e.g. "cat" != "CAT")
+     */
+    public static int binarySearch(String[] arr, String target) {
+        // TODO: Implement this method
+        return -1;  // Placeholdere
+    }
+
+    /**
+     * Implement binary search on a sorted array of Strings.
+     * @param arr An UNSORTED String array.
+     * @param target The String to find.
+     * @return The index of target if found, otherwise -1.
+     * This method is case sensitive (e.g. "cat" != "CAT")
+     */
+    public static int binarySearchUnsorted(String[] arr, String target) {
+        // TODO: Implement this method
+        return -1;  // Placeholder
+    }
+
+
 
     /*
     Challenges

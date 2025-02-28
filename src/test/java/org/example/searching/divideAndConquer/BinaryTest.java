@@ -59,6 +59,46 @@ class BinaryTest {
     }
 
     @Test
+    void binarySearchString_elementExists() {
+        String[] arr = {"bear", "bird", "CAT", "cat", "dog"};
+        assertEquals(2, binary.binarySearch(arr, "CAT"));
+        assertEquals(3, binary.binarySearch(arr, "cat"));
+    }
+
+    @Test
+    void binarySearchString_elementNotExists() {
+        String[] arr = {"bear", "bird", "CAT", "cat", "dog"};
+        assertEquals(-1, binary.binarySearch(arr, "CaT"));
+        assertEquals(-1, binary.binarySearch(arr, "bar"));
+    }
+
+    @Test
+    void binarySearchString_when_emptyArray() {
+        String[] arr = {};
+        assertEquals(-1, binary.binarySearch(arr, "cat"));
+    }
+
+    @Test
+    void binaryUnsortedSearchString_elementExists() {
+        String[] arr = {"cat", "dog", "bird", "CAT", "bear"};
+        assertEquals(4, binary.binarySearchUnsorted(arr, "bear"));
+        assertEquals(0, binary.binarySearch(arr, "cat"));
+    }
+
+    @Test
+    void binaryUnsortedSearchString_elementNotExists() {
+        String[] arr = {"cat", "dog", "bird", "CAT", "bear"};
+        assertEquals(-1, binary.binarySearchUnsorted(arr, "elephant"));
+        assertEquals(-1, binary.binarySearch(arr, "Bird"));
+    }
+
+    @Test
+    void binaryUnsortedSearchString_when_emptyArray() {
+        String[] arr = {};
+        assertEquals(-1, binary.binarySearchUnsorted(arr, "cat"));
+    }
+
+    @Test
     void testSearchOnRotatedSortedArray_when_rotatedRight4Times() {
         assertEquals(4, binary.searchOnRotatedSortedArray(new int[]{4,5,6,7,0,1,2}, 0));
     }
