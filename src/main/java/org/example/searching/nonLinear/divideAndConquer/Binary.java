@@ -1,4 +1,4 @@
-package org.example.searching.divideAndConquer;
+package org.example.searching.nonLinear.divideAndConquer;
 
 public class Binary {
     /**
