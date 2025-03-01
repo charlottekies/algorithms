@@ -64,3 +64,25 @@ This repository includes no implementations, but does include unit tests for eac
   - Click the play button next any individual test to run a single test (in IntelliJ)
   - Run Main.class, found in test > java > org.example
   - Run the command `mvn test`
+
+
+## Recommended Order of Study
+### Fundamental
+Knowledge of these algorithms will strongly assist you in your early career. Study these in preparation for your entry-level or early career roles, in this order.
+
+- Sorting
+- Searching
+- String
+
+
+### Intermediate to Advanced
+Study optimization and graph algorithms when preparing for interviews for mid-level roles.
+- Optimization
+- Graph
+
+Niche
+These may appear in mid and senior level interviews, and commonly in interviews for systems engineers, robotics engineers, graphics engineers, and finance roles
+- Math
+- Bit
+- Geometry
+- Randomized
