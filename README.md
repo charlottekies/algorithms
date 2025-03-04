@@ -80,7 +80,7 @@ Study optimization and graph algorithms when preparing for interviews for mid-le
 - Optimization
 - Graph
 
-Niche
+### Niche
 These may appear in mid and senior level interviews, and commonly in interviews for systems engineers, robotics engineers, graphics engineers, and finance roles
 - Math
 - Bit
