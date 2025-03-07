@@ -54,6 +54,16 @@ public class Binary {
     */
 
     /**
+     * Finds the pivot of a rotated, sorted array
+     * @param nums a sorted array that is potentially rotated on an unknown pivot
+     * @return The index on which the array is pivoted, otherwise, -1.
+     */
+    public static int findRotationPivot(int[] nums) {
+        // TODO: Implement binary search to discover the pivot of a rotated array
+        return -1; // Placeholder
+    }
+
+    /**
      * Finds the index of the target in a rotated sorted array.
      * @param nums The rotated sorted array.
      * @param target The number to search for.
