@@ -54,12 +54,25 @@ public class Binary {
     */
 
     /**
+     * Finds the midpoint between two ints
+     * @param lower the smaller of the two ints
+     * @param higher the larger of the two ints
+     * @return the midpoint of lower and higher
+     */
+    public static int findMidpoint(int lower, int higher) {
+        // TODO: Implement a method that finds the midpoint between two integers.
+        // Hint: Consider complications that arise when you try to find the midpoint between two VERY large ints.
+        return -1;
+    }
+
+    /**
      * Finds the pivot of a rotated, sorted array
      * @param nums a sorted array that is potentially rotated on an unknown pivot
      * @return The index on which the array is pivoted, otherwise, -1.
      */
     public static int findRotationPivot(int[] nums) {
         // TODO: Implement binary search to discover the pivot of a rotated array
+        // TODO: Write unit tests
         return -1; // Placeholder
     }
 

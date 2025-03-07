@@ -27,6 +27,13 @@ class BinaryTest {
     }
 
     @Test
+    void binarySearch_largeElements() {
+        int[] arr = {Integer.MAX_VALUE-4, Integer.MAX_VALUE-3, Integer.MAX_VALUE-2, Integer.MAX_VALUE-1, Integer.MAX_VALUE};
+        assertEquals(3, binary.binarySearch(arr, 4));
+        assertEquals(0, binary.binarySearch(arr, 1));
+    }
+
+    @Test
     void binarySearch_when_elementDoesNotExist() {
         int[] arr = {1, 2, 3, 4, 5};
         assertEquals(-1, binary.binarySearch(arr, 6));
