@@ -107,6 +107,64 @@ class BinaryTest {
     }
 
     @Test
+    void findMidpoint() {
+        assertEquals(4, binary.findMidpoint(4,4));
+        assertEquals(3, binary.findMidpoint(3,4));
+    }
+
+    @Test
+    void findMidpoint_when_negative() {
+        assertEquals(-5, binary.findMidpoint(-5,-6));
+    }
+
+    @Test
+    void findMidpoint_when_largeInputs() {
+        int smaller = Integer.MAX_VALUE-1;
+        int larger = Integer.MAX_VALUE-2;
+        int expected = smaller + (larger - smaller) /2;
+        assertEquals(expected, binary.findMidpoint(smaller,larger));
+    }
+
+    @Test
+    void findMidpoint_when_smallInputs() {
+        int smaller = Integer.MIN_VALUE+2;
+        int larger = Integer.MAX_VALUE+1;
+        int expected = smaller + (larger - smaller) /2;
+        assertEquals(expected, binary.findMidpoint(smaller,larger));
+    }
+
+    @Test
+    void findPivot_whenPivotExists() {
+        int[] nums = {1, 7, 3, 6, 5, 6};
+        assertEquals(3, binary.findPivot(nums));
+    }
+
+    @Test
+    void findPivot_whenPivotAtStart() {
+        int[] nums = {0, 1, -1};
+        assertEquals(0, binary.findPivot(nums));
+    }
+
+    @Test
+    void findPivot_whenPivotAtEnd() {
+        int[] nums = {1, 2, 3, 4, 10};
+        assertEquals(4, binary.findPivot(nums));
+    }
+
+    @Test
+    void findPivot_whenNoPivotExists() {
+        int[] nums = {1, 2, 3, 4, 5};
+        assertEquals(-1, binary.findPivot(nums));
+    }
+
+    @Test
+    void findPivot_whenAllZeros() {
+        int[] nums = {0, 0, 0, 0, 0};
+        assertEquals(0, binary.findPivot(nums));
+    }
+
+
+    @Test
     void testSearchOnRotatedSortedArray_when_rotatedRight4Times() {
         assertEquals(4, binary.searchOnRotatedSortedArray(new int[]{4,5,6,7,0,1,2}, 0));
     }
